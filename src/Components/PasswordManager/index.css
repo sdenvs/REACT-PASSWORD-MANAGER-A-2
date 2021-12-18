@@ -1,0 +1,116 @@
+* {
+  font-family: 'roboto';
+}
+.bgContainer {
+  background-color: #9ba9eb;
+  height: 100vh;
+  overflow-y: scroll;
+}
+.imgLogo {
+  width: 150px;
+}
+.card {
+  background-color: #5763a5;
+  border-radius: 10px;
+  width: 100%;
+}
+.image-1 {
+  width: 100%;
+}
+form {
+  background-color: #454f84;
+  border-radius: 10px;
+}
+.inputImg {
+  width: 45px;
+  height: 45px;
+  background-color: #ffffff;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+}
+.inputItem {
+  height: 45px;
+  width: 100%;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.inputLogo {
+  width: 55px;
+  height: 55px;
+}
+.input {
+  height: 55px;
+  width: 100%;
+  font-size: 22px;
+  font-weight: bold;
+  padding-left: 10px;
+  outline: none;
+}
+.formEl {
+  width: 100%;
+}
+.count {
+  width: 50px;
+  height: 35px;
+  border-radius: 30px;
+  padding-top: 5px;
+}
+.searchIcon {
+  width: 30px;
+  height: 30px;
+}
+.searchEl {
+  height: 30px;
+  width: 30vw;
+  outline: none;
+}
+.passText {
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 6px;
+}
+.inputCheck {
+  width: 20px;
+  height: 20px;
+}
+.showText {
+  height: 15px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.nopassImage {
+  width: 100%;
+}
+.ulLISt {
+  padding: 0px;
+  list-style-type: none;
+}
+@media (min-width: 768px) {
+  .image-1 {
+    width: 50%;
+  }
+  .formEl {
+    width: 50%;
+  }
+  .searchIcon {
+    width: 35px;
+    height: 35px;
+  }
+  .searchEl {
+    height: 35px;
+    width: 100%;
+  }
+  .count {
+    width: 60px;
+    height: 35px;
+    border-radius: 30px;
+    padding-top: 5px;
+  }
+  .passText {
+    font-size: 22px;
+    margin-right: 10px;
+  }
+  .nopassImage {
+    width: 50%;
+  }
+}
