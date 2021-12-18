@@ -76,7 +76,7 @@ class PasswordManager extends Component {
         alt="no passwords"
       />
       <br />
-      <p className="showText text-light">No Password</p>
+      <p className="showText text-light">No Passwords</p>
     </div>
   )
 
@@ -155,7 +155,7 @@ class PasswordManager extends Component {
                 value={password}
                 placeholder="Enter Password"
                 className="input"
-                type="text"
+                type="password"
               />
             </div>
             <button type="submit" className="btn-lg btn-primary align-self-end">
@@ -166,9 +166,9 @@ class PasswordManager extends Component {
         <div className="card p-4">
           <div className="d-flex flex-row justify-content-between align-items-center flex-wrap">
             <div className="d-flex align-items-center mr-2">
-              <p className="passText text-light">Your Passwords</p>
+              <h1 className="passText text-light">Your Passwords</h1>
               <p className="h5 text-light border border-light count text-center">
-                {passwordList.length}
+                {showPass.length}
               </p>
             </div>
             <div className="d-flex align-items-center">
@@ -192,10 +192,13 @@ class PasswordManager extends Component {
               onClick={this.showPassword}
               className="inputCheck mr-2"
               type="checkbox"
+              id="checkbox1"
             />
-            <p className="showText text-light">Show Passwords</p>
+            <label htmlFor="checkbox1" className="showText text-light">
+              Show Passwords
+            </label>
           </div>
-          {passwordList.length === 0
+          {showPass.length === 0
             ? this.noPassword()
             : this.getPassList(showPass)}
         </div>

@@ -26,7 +26,11 @@ const PasswordItem = props => {
           )}
         </div>
       </div>
-      <button onClick={deleteItem} className="bg-transparent border-0">
+      <button
+        testid="delete"
+        onClick={deleteItem}
+        className="bg-transparent border-0"
+      >
         <img
           alt="delete"
           src="https://assets.ccbp.in/frontend/react-js/password-manager-delete-img.png"
